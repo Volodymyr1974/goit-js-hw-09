@@ -16,12 +16,7 @@ refs.stopBtn.addEventListener('click', onStoptBtn);
 function onStartBtn() {
     refs.startBtn.setAttribute("disabled", "disabled");
     refs.stopBtn.removeAttribute("disabled");
-    timerId = setInterval(() => {
-        refs.changeColor.style.backgroundColor = `${getRandomHexColor()}`;
-    }, CHANGE_COLORS_DELAY);
-};
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    timerId = setInterval(changeColorsBody, CHANGE_COLORS_DELAY);
 };
 
 function onStoptBtn() {
@@ -29,3 +24,9 @@ function onStoptBtn() {
     refs.stopBtn.setAttribute("disabled", "disabled");
     refs.startBtn.removeAttribute("disabled");
 };
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+};
+
+function changeColorsBody(){refs.changeColor.style.backgroundColor = `${getRandomHexColor()}`;};
