@@ -18,21 +18,23 @@ img {
 }
 
 button {
-    border-radius: 15px;
+  border-radius: 15px;
   background-color: rgb(104, 255, 139);
-  padding: 10px 40px;
-  font-size: 22px;
+  padding: 8px 15px;
+  font-size: 18px;
 }
 
 input {
-  padding-top: 5px;
+  /* padding-top: 5px;
   padding-bottom: 5px;
-  margin-right: 5px;
-  font-size: 20px;
+  margin-right: 2px; */
+  font-size: 15px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 span {
-  font-size: 20px;
+  font-size: 15px;
    font-weight: bold;
    color: red;
 }
